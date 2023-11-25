@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>육아상담챗내니</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+</head>
+
+<body>
+    <div id="intro" class="intro-container">
+        <h1>육아 관련 상담을 해드립니다</h1>
+        <img src="parenting-west.jpg" , alt="chatnanny">
+        <label for="date">생년월일</label>
+        <input id="date" type="date">
+        <button onclick="start()">상담시작</button>
+
+    </div>
+    <div id="chat" class="chat-container" style="display:none;">
+        <h1>육아 상담 챗내니</h1>
+        <div class="chat-box" id="chatBox">
+
+            <div class="assistant-message"><strong></strong>
+            </div>
+
+        </div>
+        <div class="input-container">
+            <input type="text" class="input-box" id="messageInput" placeholder="메시지를 입력하세요...">
+            <button id="sendButton" onclick="spinner()">전송</button>
+
+        </div>
+        <div id="loader" class="loader" style="display:none;">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading...</p>
+        </div>
+
+    </div>
+    <script type='text/javascript' src="script.js"></script>
+    <div class="kakao-ad">
+        <ins class="kakao_ad_area" style="display:none;" data-ad-unit="DAN-l3fwNwQT6YlENNvU" data-ad-width="320"
+            data-ad-height="100"></ins>
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+
+    </div>
+</body>
+
+</html>
